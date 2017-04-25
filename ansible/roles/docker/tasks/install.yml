@@ -38,7 +38,7 @@
     repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ release.stdout }} stable
     state: present
     filename: docker
-  notify: apt-get install
+  notify: apt-get update
 
 # Install the docker service.  Fix the name of the package.
 # http://docs.ansible.com/ansible/apt_module.html
