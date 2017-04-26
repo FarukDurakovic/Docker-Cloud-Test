@@ -6,6 +6,6 @@
 #   A variable is being used here
 - name: Adding user to group docker
   user:
-    name: "{{ Faruk@Lenovo-PC }}"
+    name: "{{ student_username }}"
     group: docker
     append: yes
