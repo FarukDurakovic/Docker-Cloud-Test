@@ -27,7 +27,7 @@ class FlaskrTestCase(unittest.TestCase):
         # Replace '/' with the page path you want to make
         rv = self.app.get('/Topic')  
         # Replace UNH698 Website with the text you expect to see on you topic page
-        assert b'is an awesome' in rv.data
+        assert b'awesome!' in rv.data
 		
 if __name__ == '__main__':
     unittest.main()
