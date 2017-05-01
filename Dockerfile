@@ -7,3 +7,5 @@ RUN pip3 install Flask
 
 COPY . /src
 WORKDIR /src
+
+RUN pip3 install prometheus_client
