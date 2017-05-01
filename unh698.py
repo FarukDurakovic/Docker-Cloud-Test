@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 from prometheus_metrics import setup_metrics
+setup_metrics(app)
 app = Flask(__name__)
 
 @app.route("/")
